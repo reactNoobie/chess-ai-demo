@@ -97,16 +97,16 @@
             <b><br></b>
             <div class="container my-3">
                 <div class="row align-items-center">
-                    <!-- <div class="col-md-6">
-                        <h1 class="text-align-center">Simple Chess AI</h1>
+                    <div class="col-md-6">
+                        <!-- <h1 class="text-align-center">Simple Chess AI</h1>
                         <div class="row justify-content-center">
                             <span id="position-count">0</span> &nbsp positions evaluated in &nbsp <span id="time">0</span>s.
                         </div>
                         <div class="row mb-3 justify-content-center">
                             That's &nbsp <span id="positions-per-s">0</span> &nbsp positions / s.
-                        </div>
+                        </div> -->
                         <div id="accordion">
-                            <div class="card">
+                            <!-- <div class="card">
                                 <div class="card-header" id="settingsHeading">
                                     <h2 class="text-align-center">
                                         <button class="btn btn-header no-outline" data-toggle="collapse" data-target="#settings" aria-expanded="true" aria-controls="settings">
@@ -114,11 +114,11 @@
                                         </button>
                                     </h2>
                                 </div>
-                            </div>
+                            </div> -->
                             <div id="settings" class="collapse" aria-labelledby="settingsHeading" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="row align-items-center justify-content-center">
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label for="search-depth">Search Depth (Black):</label>
                                             <select id="search-depth">
                                                 <option value="1">1</option>
@@ -127,9 +127,9 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select>
-                                        </div>
+                                        </div> -->
                                     </div>
-                                    <div class="row align-items-center justify-content-center">
+                                    <!-- <div class="row align-items-center justify-content-center">
                                         <div class="form-group">
                                             <label for="search-depth-white">Search Depth (White):</label>
                                             <select id="search-depth-white">
@@ -140,16 +140,16 @@
                                                 <option value="5">5</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="row align-items-center justify-content-center">
+                                    </div> -->
+                                    <!-- <div class="row align-items-center justify-content-center">
                                         <div class="form-group">
                                             <input type="checkbox" id="showHint" name="showHint" value="showHint">
                                             <label for="showHint">Show Suggested Move (White)</label>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="card">
+                            <!-- <div class="card">
                                 <div class="card-header" id="openingPositionsHeading">
                                     <h2 class="text-align-center">
                                         <button class="btn btn-header no-outline" data-toggle="collapse" data-target="#openingPositions" aria-expanded="true" aria-controls="openingPositions">
@@ -157,8 +157,8 @@
                                         </button>
                                     </h2>
                                 </div>
-                            </div>
-                            <div id="openingPositions" class="collapse" aria-labelledby="openingPositionsHeading" data-parent="#accordion">
+                            </div> -->
+                            <!-- <div id="openingPositions" class="collapse" aria-labelledby="openingPositionsHeading" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="row my-3 text-align-center">
                                         <div class="col-md-6 my-2">
@@ -177,8 +177,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
+                            </div> -->
+                            <!-- <div class="card">
                                 <div class="card-header" id="compVsCompHeading">
                                     <h2 class="text-align-center">
                                         <button class="btn btn-header no-outline" data-toggle="collapse" data-target="#compVsComp" aria-expanded="true" aria-controls="compVsComp">
@@ -186,9 +186,9 @@
                                         </button>
                                     </h2>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <div id="compVsComp" class="collapse" aria-labelledby="compVsCompHeading" data-parent="#accordion">
+                        <!-- <div id="compVsComp" class="collapse" aria-labelledby="compVsCompHeading" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row text-align-center">
                                     <div class="col-md-6 my-2">
@@ -199,8 +199,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row my-3 text-align-center">
+                        </div> -->
+                        <!-- <div class="row my-3 text-align-center">
                             <div class="col-md-12">
                                 <h2>Advantage</h2>
                                 <p><span id="advantageColor">Neither side</span> has the advantage 
@@ -212,32 +212,44 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row my-3 text-align-center">
+                        </div> -->
+                        <!-- <div class="row my-3 text-align-center">
                             <div class="col-md-12">
                                 <h2>Status</h2>
                                 <p><span id="status">No check, checkmate, or draw.</span></p>
                             </div>
-                        </div>
-                    </div> -->
+                        </div> -->
+                    </div>
                     <div class="col-md-6">
                         <div id="myBoard"></div>
                         <div class="row my-3 text-align-center">
                             <div class="col-md-6 my-2">
                                 <button class="btn btn-danger" id="undoBtn">Difficulty</button>
-                                <select name="difficulty" id="dif">
+                                <select id="search-depth">
+<!-- TEST -->
                                     <option value="1">1</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3" selected>3</option>
                                     <option value="4">4</option>
                                     <option value="5">5</option>
                                   </select>
                             </div>
                             <div class="col-md-6 my-2">
-                                <button class="btn btn-success" id="redoBtn">New Game</button>
+                                <button class="btn btn-success" id="newGameBtn">New Game</button>
                             </div>
+                            <!-- <div class="form-group">
+                                <label for="search-depth">Search Depth (Black):</label>
+                                    <select id="search-depth">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3" selected>3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                            </div> -->
                         </div>
                     </div>
+
                 </div>
             </div>
         </main>
